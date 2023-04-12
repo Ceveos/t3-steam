@@ -49,7 +49,7 @@ export default async function auth(req: NextApiRequest, res: NextApiResponse) {
           },
         },
         token: {
-          async request(ctx) {
+          async request() {
             const token_params: {
               [key: string]: string | string[] | undefined;
             } = {
